@@ -1,0 +1,13 @@
+{
+  "hello": "world",
+  "list":{
+    "about": "About me",
+    "projects": "Experience",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+  "language": {
+    "en": "English",
+    "es": "Spanish"
+  }
+}

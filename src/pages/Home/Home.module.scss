@@ -1,0 +1,183 @@
+@import "../../styles/colors.scss";
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+
+  h1{
+    font-weight: 500;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .containerAboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 70px;
+    .aboutMe{
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+      align-items: center;
+      img{
+        width: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 8px 9px 0px 4px rgba(0, 0, 0, 0.46);
+
+      }
+      @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+        justify-items: center;
+        img{
+          width: 300px;
+        }
+      }
+    }
+  }
+  .containerProjects{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    .containerBtns{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      width: 100%;
+      box-sizing: border-box;
+      button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
+        background-color: $primaryColor;
+        &:hover{
+          transform: scale(1.1);
+        }
+        &#active{
+          background-color: #ffffff;
+          color: $primaryColor;
+        }
+      }
+    }
+    .containerCards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      @media screen and (max-width: 768px){
+        grid-template-columns: 1fr;
+      }
+      .project{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba($color: $primaryColor, $alpha: 0.7);
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+
+        img{
+          width: 100%;
+          height: 200px;
+          object-fit: contain;
+          border-radius: 10px;
+          box-shadow: 8px 9px 0px 4px rgba(0, 0, 0, 0.46);
+        }
+        h1{
+          margin: 10px 0;
+        }
+        p{
+          margin: 10px 0;
+        }
+        a{
+          width: 100%;
+          position: relative;
+          padding: 10px 20px;
+          .overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: $primaryColor, $alpha: 0.7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            i{
+              font-size: 35px;
+              color: #ffffff;
+              transition: all 0.3s ease-in-out;
+            }
+            &:hover{
+              opacity: 1;
+              i{
+                color: #f2f2f2;
+              }
+            }
+          }
+        }
+      }
+    }
+    #hidden{
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+    }
+    #visible{
+      opacity: 1;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+  .containerContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    .socialMedia{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      a{
+        text-decoration: none;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 35px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          color: #f2f2f2;
+        }
+      }
+    }
+  }
+}

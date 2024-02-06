@@ -1,0 +1,48 @@
+{
+  "title": "Jorge Castillo",
+  "description": "Soy profesional en ingenieria electornica y telecomunicaciones enfocado en el desarrollo de software, Soy apasionado por la creación de interfaces de usuario intuitivas y atractivas que mejoren la experiencia del usuario final con ganas de seguir aprendiendo y compartiendo mis conocimientos. Actualmente enfocado en el desarrollo frontend.",
+  "aboutMe":{
+    "title": "Acerca de mi"
+  },
+  "experience":{
+    "title": "Experiencia",
+    "work": "Profesional",
+    "independent": "Independiente",
+    "projects":{
+      "tp":{
+        "company": "Teleperformance",
+        "date":"May 2022 - Ago 2023",
+        "job":"Desarrollador Frontend",
+        "description":"Desarrollo de aplicación de tipo Dashboard en donde se mostraban diferentes gráficas y tablas de datos para el análisis de los mismos, estas gráficas se realizaban con una librería de Javascript llamada ChartJS, dentro de este dashboard también se desarrolló una sección de CMS (Sistema de gestión de contenidos). También se desarrolló una plataforma basada en React y usando Firebase para Back-end para el almacenamiento, gestión y control de contenidos y por último se realizo una aplicación sencilla para la gestión de reservas de diferentes lugares disponibles en la empresa"
+      },
+      "eol":{
+        "company": "EOL Solutions SAS",
+        "date":"Ago 2023 - Dic 2023",
+        "job":"Desarrollador Frontend",
+        "description":"Desarrollo de e-commerce usando React Hooks, scss modules, Recoil para gestion de estados e implementación de websockets con socket.io para notificaciones y chat en tiempo real."
+      },
+      "somos":{
+        "company": "Software Mobile Solutions Ltda",
+        "date":"Feb 2021 - May 2022",
+        "job":"Desarrollador Junior",
+        "description":"Desarrollo de páginas de gestión de usuarios basados en React, consumiendo API REST con axios, manejando la navegación con React-Router. Además de trabajar en equipo para el desarrollo de un ecommerce usando Angular e implementando pasarelas de pago en los dos proyectos trabajados."
+      }
+    },
+    "independentProjects":{
+      "jorge":{
+        "title":"Jorge Castillo Portafolio V1",
+        "description":"Este es un desafío de FreeCodeCamp. Es una página de portafolio. Usé React y CSS3 para construirlo. Fue mi primera página de portafolio."
+      },
+      "pokedex":{
+        "title":"Pokedex React Native",
+        "description":"Pokedex es una aplicación web que te permite buscar Pokémon por nombre o por número. La aplicación fue desarrollada con React Native, utilizando la PokeAPI para obtener los datos de los Pokémon."
+      },
+      "weather":{
+        "title":"Weather App",
+        "description":"Weather App es una aplicación web que permite buscar el tiempo de una ciudad. La aplicación fue desarrollada con React, utilizando la API OpenWeatherMap para obtener los datos meteorológicos y ChartJS para implementar gráficos."
+      }
+    }
+  },
+  "contact": "Contacto",
+  "footer": "Copyrigth {{date}} Jorge Castillo - Todos los derechos reservados."
+}

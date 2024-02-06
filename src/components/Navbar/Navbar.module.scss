@@ -1,0 +1,68 @@
+@import '../../styles/colors.scss';
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 20px;
+  align-items: center;
+  width: 100%;
+  background-color: $primaryColor;
+  font-weight: bold;
+  position: fixed;
+
+  ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    li{
+      cursor: pointer;
+      margin: 0 10px;
+      a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          color: #f2f2f2;
+        }
+      }
+    }
+  }
+
+  i{
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    & > div{
+      position: absolute;
+      box-sizing: border-box;
+      right: 0;
+      top: calc(100% + 20px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      cursor: default;
+      .btnLanguage{
+        cursor: pointer;
+      }
+    }
+  }
+
+  #open{
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+  #hidden{
+    visibility: hidden;
+    cursor: none;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+}

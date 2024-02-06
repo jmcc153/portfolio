@@ -1,0 +1,48 @@
+{
+  "title": "Jorge Castillo",
+  "description": "I am a professional in electrical engineering and telecommunications with a focus on software development. I have a passion for creating intuitive and attractive user interfaces that enhance the end user's experience, along with a desire to continue learning and sharing my knowledge. My current focus is on frontend development.",
+  "aboutMe":{
+    "title": "Acerca de mi"
+  },
+  "experience":{
+    "title": "Experience",
+    "work": "Professional",
+    "independent": "Independent",
+    "projects":{
+      "tp":{
+        "company": "Teleperformance",
+        "date":"May 2022 - Aug 2023",
+        "job":"Frontend Developer",
+        "description":"Development of a Dashboard-type application where different graphs and data tables were shown for their analysis. These graphs were made with a Javascript library called ChartJS. Within this dashboard, a CMS section (Content Management System) was also developed. A platform based on React was also developed and using Firebase for Back-end for storage, management and control of content and finally a simple application was made to manage reservations for different places available in the company."
+      },
+      "eol":{
+        "company": "EOL Solutions SAS",
+        "date":"Aug 2023 - Dec 2023",
+        "job":"Frontend Developer",
+        "description":"E-commerce development using React Hooks, scss modules, Recoil for state management and implementation of websockets with socket.io for notifications and real-time chat."
+      },
+      "somos":{
+        "company": "Software Mobile Solutions Ltda",
+        "date":"Feb 2021 - May 2022",
+        "job":"Junior Developer",
+        "description":"Development of user management pages based on React, consuming REST API with axios, managing navigation with React-Router. In addition to working as a team to develop an ecommerce using Angular and implementing payment gateways in the two projects worked on."
+      }
+    },
+    "independentProjects":{
+      "jorge":{
+        "title":"Jorge Castillo Portfolio V1",
+        "description":"This is a challenge from FreeCodeCamp. It is a portfolio page. I used React and CSS3 to build it. It was my first portfolio page."
+      },
+      "pokedex":{
+        "title":"Pokedex React Native",
+        "description":"Pokedex is a web application that allows you to search for Pokémon by name or by number. The application was developed with React Native, using the PokeAPI to obtain the data of the Pokémon."
+      },
+      "weather":{
+        "title":"Weather App",
+        "description":"Weather App is a web application that allows you to search for the weather of a city. The application was developed with React, using the OpenWeatherMap API to obtain the weather data and ChartJS to implement graphs."
+      }
+    }
+  },
+  "contact": "Contact",
+  "footer": "Copyrigth {{date}} Jorge Castillo - All rights reserved"
+}
