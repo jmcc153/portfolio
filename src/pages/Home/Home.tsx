@@ -6,6 +6,7 @@ import styles from './Home.module.scss'
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { BiLogoGmail } from "react-icons/bi"
 import portafolio from '../../assets/portafolio.jpg'
+import trueka from '../../assets/La_Trueka.png'
 import pokedex from '../../assets/Pokedex.png'
 import weatherReport from '../../assets/weatherReport.png'
 import { BsArrowUpRightCircle } from "react-icons/bs"
@@ -21,7 +22,9 @@ export const Home = () => {
       "company":t('experience.projects.eol.company'),
       "date":t('experience.projects.eol.date'),
       "jobTitle":t('experience.projects.eol.job'),
-      "description":t('experience.projects.eol.description')
+      "description":t('experience.projects.eol.description'),
+      "image": trueka,
+      "url": "https://www.latrueka.org"
     },
     {
       "icon":"",
@@ -87,6 +90,13 @@ export const Home = () => {
                 <h1>{project.company}</h1>
                 <p>{project.date}</p>
                 <h2>{project.jobTitle}</h2>
+                {project.image && <a href={project.url} target="_blank">
+                  <div className={styles.overlay}>
+                    <BsArrowUpRightCircle/>
+                    <h3>See project</h3>
+                  </div>
+                  <img src={project.image}></img>
+                  </a>}
                 <p>{project.description}</p>
               </div>
             ))}
