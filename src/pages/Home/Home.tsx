@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react"
 import Navbar from "../../components/Navbar/Navbar"
-import imageProfile from '../../assets/imageProfile.jpg'
+import imageProfile from '../../assets/DSC_2443.jpg'
 import { useTranslation } from "react-i18next"
 import styles from './Home.module.scss'
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
