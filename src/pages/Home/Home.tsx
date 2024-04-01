@@ -93,7 +93,7 @@ export const Home = () => {
                 {project.image && <a href={project.url} target="_blank">
                   <div className={styles.overlay}>
                     <BsArrowUpRightCircle/>
-                    <h3>See project</h3>
+                    <h3>{t('experience.seeProject')}</h3>
                   </div>
                   <img src={project.image}></img>
                   </a>}

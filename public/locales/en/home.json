@@ -2,11 +2,12 @@
   "title": "Jorge Castillo",
   "description": "I am a professional in electrical engineering and telecommunications with a focus on software development. I have a passion for creating intuitive and attractive user interfaces that enhance the end user's experience, along with a desire to continue learning and sharing my knowledge. My current focus is on frontend development.",
   "aboutMe":{
-    "title": "Acerca de mi"
+    "title": "About me"
   },
   "experience":{
     "title": "Experience",
     "work": "Professional",
+    "seeProject": "See project",
     "independent": "Independent",
     "projects":{
       "tp":{
